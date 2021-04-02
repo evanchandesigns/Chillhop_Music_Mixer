@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.hidden {
+  display: none;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 100px;
+  padding: 10px;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+#resetButton p {
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#background {
+  position: relative;
+  margin-bottom: -270px;
+}
+
+.plate {
+  position: relative;
+  width: 200px;
+  bottom: 35px;
+  left: 790px;
+}
+
+.ipod {
+  position: relative;
+  width: 90px;
+  bottom: 330px;
+  left: 900px;
+}
+
+.wooden {
+  width: 200px;
+  position: relative;
+  bottom: 190px;
+  left: 1000px;
+}
+
+#itemsContainer div {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+#cream, #matcha, #coffee, #oreo, #berry, #roll, #fire, #bird, #rain {
+  width: 90px;
+  cursor: pointer;
+}
+
+.drinks img:hover, .cds img:hover, .cakes img:hover{
+  position: relative;
+  filter: drop-shadow(0px 0px 20px #F1C40F);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+ .drop-zone-plate{
+  width: 130px;
+  height: 72px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.plateChosen, .woodenChosen, .ipodChosen {
+  filter: blur(50px) brightness(3.0);
+  background-color: #00BCD4;
+}
+
+@keyframes bounce {
+  0%{ transform: translateY(0);}
+  50%{ transform: translateY(-20px);}
+  70%{ transform: translateY(0px);}
+  100%{ transform: translateY(0);}
+}
+
+#cream.dropped{
+  margin-top: -50px;
+  margin-left: 10px;
+  animation: bounce 1.0s ease infinite;
+}
+
+#matcha.dropped, #coffee.dropped {
+  margin-top: -20px;
+  margin-left: 25px;
+  animation: bounce 1.5s ease infinite;
+}
+
+.drop-zone-wooden{
+ width: 140px;
+ height: 80px;
+ position: absolute;
+ right: 50px;
+ top: 10px;
+ z-index: 1;
+}
+
+#roll.dropped, #berry.dropped {
+  margin-top: -20px;
+  margin-left: 30px;
+  animation: bounce 1.5s ease infinite;
+}
+
+#oreo.dropped {
+  margin-top: -40px;
+  margin-left: 30px;
+  animation: bounce 1.5s ease infinite;
+}
+
+.drop-zone-ipod{
+ width: 100px;
+ height: 60px;
+ position: absolute;
+ right: 4px;
+ top: 3px;
+ z-index: 1;
+}
+#rain.visible, #fire.visible, #bird.visible {
+  display: inline-block;
+}
+
+#rain.dropped, #fire.dropped, #bird.dropped {
+  display: none;
+}

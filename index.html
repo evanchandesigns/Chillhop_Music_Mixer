@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Tran_MT_Yu_J_InteractiveMusicMixer</title>
+</head>
+<body>
+  <main id="wrapper">
+    <header id="headLine">
+  		<h1 class="hidden">Drag and Drop Music Mixer</h1>
+  		<h2>Chillhop & Coffee</h2>
+  		<p>Perfect tunes to start your morning with</p>
+  	</header>
+  	<section id="game-board">
+  		<h2 class="hidden">Coffee Background - Dropzones</h2>
+      <div id="background"><img src="images/background_no.jpg" alt="background"></div>
+      <div class="plate"><img src="images/plate.svg" alt="plate"><div data-drop="plate" class="drop-zone-plate"></div></div>
+      <div class="wooden"><img src="images/wooden.svg" alt="wooden"><div data-drop="wooden" class="drop-zone-wooden"></div></div>
+      <div class="ipod"><img src="images/ipod.svg" alt="ipod"><div data-drop="ipod" class="drop-zone-ipod"></div></div>
+  	</section>
+  	<footer>
+      <h2 class="hidden">Menu</h2>
+      <p>Drag the items to where they belong to try it out!</p>
+      <div id="resetButton"><p>RESET</p></div>
+      <div id="itemsContainer">
+        <div class="drinks">
+          <img data-audio="cream" data-drop="plate" id="cream" src="images/drinks_cream.svg" alt="cream">
+          <img data-audio="matcha" data-drop="plate" id="matcha" src="images/drinks_matcha.svg" alt="matcha">
+          <img data-audio="coffee" data-drop="plate" id="coffee" src="images/drinks_coffee.svg" alt="coffee">
+        </div>
+        <div class="cakes">
+          <img data-audio="oreo" data-drop="wooden" id="oreo" src="images/cakes_oreo.svg" alt="oreo">
+          <img data-audio="roll" data-drop="wooden" id="roll" src="images/cakes_roll.svg" alt="roll">
+          <img data-audio="berry" data-drop="wooden" id="berry" src="images/cakes_strawberry.svg" alt="strawberry">
+        </div>
+        <div class="cds">
+          <img data-audio="rain" data-drop="ipod" id="rain" src="images/cd_rain.svg" alt="rain">
+          <img data-audio="fire" data-drop="ipod" id="fire" src="images/cd_fireplace.svg" alt="fire">
+          <img data-audio="bird" data-drop="ipod" id="bird" src="images/cd_bird.svg" alt="bird">
+        </div>
+      </div>
+      <audio id="cream" data-audio="cream" src="audio/cream.mp3"></audio>
+      <audio data-audio="matcha" src="audio/matcha.mp3"></audio>
+      <audio data-audio="coffee" src="audio/coffee.mp3"></audio>
+      <audio data-audio="oreo" src="audio/oreo.mp3"></audio>
+      <audio data-audio="roll" src="audio/roll.mp3"></audio>
+      <audio data-audio="berry" src="audio/berry.mp3"></audio>
+      <audio data-audio="rain" src="audio/rain.mp3"></audio>
+      <audio data-audio="fire" src="audio/fire.mp3"></audio>
+      <audio data-audio="bird" src="audio/bird.mp3"></audio>
+  	</footer>
+  </main>
+<script src="js/main.js"></script>
+</body>
+</html>
