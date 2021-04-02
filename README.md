@@ -36,7 +36,7 @@ To try it out, clone this project to a specific folder and open the `index.html`
 - Creating some more options to allow users to adjust volumes.
 
 ### Team Members
-- My Tu Tran (Evan): Developer
+- Evan Chan: Developer
 - Jiheui Yu: Designer
 
 ### License
