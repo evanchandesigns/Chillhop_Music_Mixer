@@ -41,5 +41,5 @@ To try it out, clone this project to a specific folder and open the `index.html`
 
 ### License
 
-MyTuTran & JiheuiYu :copyright: 2020
+EvanChan & JiheuiYu :copyright: 2020
 
